@@ -3,71 +3,214 @@
 <head>
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>Takudzwa — Portfolio</title>
+<title>Takudzwa Vuma — Identity &amp; Access Management</title>
+<meta name="description" content="Takudzwa Vuma — aspiring IAM Engineer. Active Directory, Entra ID, Okta, Azure RBAC, MFA, and identity lifecycle work." />
 <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
+
 <header class="site-header">
-  <a class="logo" href="#top">TK</a>
+  <a class="logo" href="#top">Takudzwa&nbsp;Vuma</a>
   <nav>
     <a href="#about">About</a>
-    <a href="#work">Work</a>
+    <a href="#skills">Skills</a>
+    <a href="#experience">Experience</a>
+    <a href="#projects">Projects</a>
     <a href="#contact">Contact</a>
-    <button id="theme-toggle" type="button" aria-label="Toggle dark mode">◐</button>
   </nav>
 </header>
 
 <main id="top">
+
   <section class="hero">
-    <p class="eyebrow">Portfolio</p>
-    <h1>Hi, I'm <span>Takudzwa</span>.</h1>
-    <p class="lede">I build clean, fast web experiences. This is a running record of the things I make.</p>
-    <a class="cta" href="#work">See my work</a>
+    <p class="eyebrow">Identity &amp; Access Management</p>
+    <h1>I make sure the right people<br />have the <span>right access</span> — and nothing more.</h1>
+    <p class="lede">
+      Computer Science undergraduate at Talladega College (3.98 GPA) with hands-on IAM administration
+      across Active Directory, Entra ID, and Okta for 300 users. I'm building toward an
+      IAM Engineer role, with a focus on identity lifecycle, RBAC, MFA, and least-privilege enforcement.
+    </p>
+    <div class="cta-row">
+      <a class="cta" href="#experience">See my experience</a>
+      <a class="cta ghost" href="Takudzwa_Vuma_Resume.pdf" target="_blank" rel="noopener">Download résumé (PDF)</a>
+    </div>
+    <ul class="stat-row">
+      <li><strong>300</strong><span>identities administered</span></li>
+      <li><strong>60+</strong><span>lifecycle actions executed</span></li>
+      <li><strong>40%</strong><span>standing privilege reduced in lab</span></li>
+      <li><strong>20%</strong><span>fewer recurring identity tickets</span></li>
+    </ul>
   </section>
 
   <section id="about">
     <h2>About</h2>
-    <p>Short bio goes here — what you do, what you care about, and what you're looking for next. Two or three sentences is plenty.</p>
-    <ul class="skills">
-      <li>HTML &amp; CSS</li>
-      <li>JavaScript</li>
-      <li>Git</li>
-      <li>Responsive design</li>
-    </ul>
+    <div class="two-col">
+      <div>
+        <p>
+          I came into identity from the help desk and the network closet — the places where broken access
+          actually shows up. Triaging MFA failures, account lockouts, and unauthorized access attempts for
+          300 users taught me that IAM is mostly about process discipline: who gets provisioned, who gets
+          reviewed, and who gets removed on time.
+        </p>
+        <p>
+          Today I split my time between undergraduate security research (IDS tuning, packet analysis,
+          NIST CSF mapping) and building cloud identity labs in Azure. I'm looking for an IAM Engineer or
+          Identity Analyst role where I can grow into access governance and automation.
+        </p>
+      </div>
+      <aside class="panel">
+        <h3>At a glance</h3>
+        <dl>
+          <dt>Focus</dt><dd>Identity lifecycle, RBAC, MFA, least privilege</dd>
+          <dt>Platforms</dt><dd>Entra ID, Active Directory, Okta, Azure, AWS</dd>
+          <dt>Education</dt><dd>B.S. Computer Science, Talladega College — May 2027</dd>
+          <dt>Location</dt><dd>Talladega, AL</dd>
+          <dt>Open to</dt><dd>IAM Engineer / Identity Analyst — internships &amp; entry-level</dd>
+        </dl>
+      </aside>
+    </div>
   </section>
 
-  <section id="work">
-    <h2>Selected work</h2>
+  <section id="skills">
+    <h2>Skills</h2>
+    <div class="skill-grid">
+      <div class="skill-card featured">
+        <h3>Cloud &amp; Identity (IAM)</h3>
+        <ul>
+          <li>Entra ID (Azure AD)</li><li>Active Directory</li><li>Okta</li>
+          <li>Azure RBAC</li><li>Multi-Factor Authentication</li>
+          <li>Least Privilege</li><li>Account Lifecycle Management</li>
+          <li>Microsoft Azure</li><li>AWS</li>
+        </ul>
+      </div>
+      <div class="skill-card">
+        <h3>Security &amp; Frameworks</h3>
+        <ul>
+          <li>NIST CSF</li><li>MITRE ATT&amp;CK</li><li>Incident Response</li>
+          <li>Digital Forensics</li><li>Threat Detection</li>
+          <li>IDS (Snort, Suricata)</li><li>Vulnerability Assessment</li>
+        </ul>
+      </div>
+      <div class="skill-card">
+        <h3>Programming &amp; Scripting</h3>
+        <ul>
+          <li>Python</li><li>PowerShell</li><li>Bash</li>
+          <li>SQL</li><li>JSON</li><li>HTML / CSS</li>
+        </ul>
+      </div>
+      <div class="skill-card">
+        <h3>Networking &amp; Controls</h3>
+        <ul>
+          <li>Fortinet firewalls</li><li>iptables</li><li>Cisco switching</li>
+          <li>Wireshark</li><li>TCP/IP, DNS/DHCP</li><li>Cryptography / encryption</li>
+        </ul>
+      </div>
+      <div class="skill-card">
+        <h3>Platforms &amp; Tools</h3>
+        <ul>
+          <li>Linux (Kali, Ubuntu)</li><li>Windows</li><li>macOS</li>
+          <li>Splunk</li><li>ServiceNow</li><li>hping3</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section id="experience">
+    <h2>Experience</h2>
+    <ol class="timeline">
+      <li>
+        <div class="role-head">
+          <h3>Undergraduate Research Assistant</h3>
+          <span class="when">Aug 2025 – Present</span>
+        </div>
+        <p class="org">Talladega College · Talladega, AL</p>
+        <ul>
+          <li>Simulated DoS attack vectors (MITRE ATT&amp;CK T1498/T1499) with hping3 across a 3-VM lab to stress-test perimeter defenses.</li>
+          <li>Tuned Snort and Suricata IDS rules across 5 scenarios, raising detection accuracy to 95% and cutting false positives to 5%.</li>
+          <li>Investigated raw packet captures in Wireshark to isolate threat patterns, triggering automated iptables containment rules.</li>
+          <li>Authored a technical benchmarking paper mapping detection metrics to NIST CSF Detect &amp; Respond functions.</li>
+        </ul>
+      </li>
+      <li class="highlight">
+        <div class="role-head">
+          <h3>Information Technology Support Specialist</h3>
+          <span class="when">Jan 2025 – May 2025</span>
+        </div>
+        <p class="org">Talladega College · Talladega, AL</p>
+        <ul>
+          <li>Administered IAM across Active Directory, Entra ID, and Okta for 300 users, executing 60+ lifecycle actions while enforcing RBAC and MFA compliance.</li>
+          <li>Triaged MFA failures, account lockouts, and unauthorized access attempts across 300 identities, documenting audit trails to secure access.</li>
+          <li>Hardened 40 workstations, 10 printers, and wireless infrastructure across 5 facilities with baseline endpoint controls.</li>
+          <li>Authored 10+ internal KB articles on access provisioning, driving a 20% reduction in recurring identity tickets.</li>
+        </ul>
+      </li>
+      <li>
+        <div class="role-head">
+          <h3>Technical Support Engineer</h3>
+          <span class="when">Aug 2021 – Jul 2023</span>
+        </div>
+        <p class="org">TelOne Zimbabwe · Harare, Zimbabwe</p>
+        <ul>
+          <li>Remediated 5–10 critical network faults weekly across fiber, ADSL, and VoIP for 60 clients, maintaining a 90% SLA ticket closure rate.</li>
+          <li>Correlated CPE telemetry, traffic logs, and routing metrics with a 3-person team to isolate infrastructure faults from edge failures.</li>
+          <li>Automated remote patch management and configuration for 20 CPE routers weekly via TR-069/ACS.</li>
+          <li>Deployed Fortinet firewalls, Cisco switches, and edge routers in the field, validating packet delivery before service activation.</li>
+        </ul>
+      </li>
+    </ol>
+  </section>
+
+  <section id="projects">
+    <h2>Projects</h2>
     <div class="grid">
       <article class="card">
-        <h3>Project one</h3>
-        <p>One line on the problem, one line on what you built.</p>
-        <a href="#">View →</a>
+        <h3>Azure IAM &amp; Cloud Hardening Lab</h3>
+        <p class="stack">Azure · Entra ID · AD DS · PowerShell</p>
+        <ul>
+          <li>Architected a hybrid cloud lab with 5 Azure VMs and AD DS, automating provisioning with PowerShell and interactive AI tooling.</li>
+          <li>Audited cloud permissions across 25 user accounts and enforced Azure RBAC, cutting excessive standing privileges by 40%.</li>
+        </ul>
       </article>
       <article class="card">
-        <h3>Project two</h3>
-        <p>One line on the problem, one line on what you built.</p>
-        <a href="#">View →</a>
-      </article>
-      <article class="card">
-        <h3>Project three</h3>
-        <p>One line on the problem, one line on what you built.</p>
-        <a href="#">View →</a>
+        <h3>IDS Tuning &amp; Detection Benchmarking</h3>
+        <p class="stack">Snort · Suricata · Wireshark · iptables</p>
+        <ul>
+          <li>Built a 3-VM attack lab and benchmarked detection across 5 DoS scenarios to 95% accuracy / 5% false positives.</li>
+          <li>Mapped every metric back to NIST CSF Detect &amp; Respond functions in a written technical paper.</li>
+        </ul>
       </article>
     </div>
   </section>
 
+  <section id="leadership">
+    <h2>Leadership</h2>
+    <div class="panel wide">
+      <div class="role-head">
+        <h3>Technical Cybersecurity Lead — Google Developer Student Club</h3>
+        <span class="when">Aug 2025 – Present</span>
+      </div>
+      <ul>
+        <li>Lead 13 students through hands-on workshops on threat detection, network defense, and cloud IAM fundamentals.</li>
+        <li>Tutor peers on NIST CSF and MITRE ATT&amp;CK alongside practical tooling — Wireshark, Linux, Snort.</li>
+      </ul>
+      <p class="affil">Member: ColorStack · NSBE · CodePath · ACM · Thurgood Marshall College Fund</p>
+    </div>
+  </section>
+
   <section id="contact">
-    <h2>Contact</h2>
-    <p>Best way to reach me:</p>
+    <h2>Let's talk identity</h2>
+    <p class="lede">I'm actively looking for IAM engineering and identity analyst opportunities. The fastest way to reach me is email.</p>
     <p class="contact-links">
-      <a href="mailto:takuvuma@gmail.com">Email</a>
-      <a href="https://github.com/Takuvuma">GitHub</a>
+      <a href="mailto:takuvuma@gmail.com">takuvuma@gmail.com</a>
+      <a href="tel:+12564931036">256-493-1036</a>
+      <a href="https://linkedin.com/in/takudzwa-vuma" target="_blank" rel="noopener">LinkedIn</a>
+      <a href="https://github.com/Takuvuma" target="_blank" rel="noopener">GitHub</a>
     </p>
   </section>
+
 </main>
 
-<footer>© <span id="year"></span> Takudzwa. Built by hand.</footer>
+<footer>© <span id="year"></span> Takudzwa Vuma</footer>
 <script src="script.js"></script>
 </body>
 </html>

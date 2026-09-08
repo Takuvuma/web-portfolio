@@ -1,6 +1,8 @@
 # web-portfolio
 
-Personal portfolio site — plain HTML, CSS, and JavaScript, no build step.
+Personal portfolio for **Takudzwa Vuma** — Identity & Access Management.
+
+Static site: plain HTML, CSS, and JavaScript. No build step, no dependencies.
 
 ## Run locally
 
@@ -12,6 +14,11 @@ Then open http://localhost:8000
 
 ## Files
 
-- `index.html` — page structure and content
-- `styles.css` — theming (light/dark via `data-theme`) and layout
-- `script.js` — dark-mode toggle, footer year
+- `index.html` — all page content (hero, about, skills, experience, projects, leadership, contact)
+- `styles.css` — nude/warm-neutral palette defined as CSS variables at the top
+- `script.js` — footer year, scroll-spy nav highlighting
+- `Takudzwa_Vuma_Resume.pdf` — linked from the hero
+
+## Deploy to GitHub Pages
+
+Settings → Pages → Source: `main` branch, `/ (root)`.

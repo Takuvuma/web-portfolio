@@ -1,12 +1,21 @@
 document.getElementById("year").textContent = new Date().getFullYear();
 
-const root = document.documentElement;
-const toggle = document.getElementById("theme-toggle");
-const stored = localStorage.getItem("theme");
-if (stored) root.dataset.theme = stored;
+// Highlight the nav link for the section currently in view.
+const links = new Map(
+  [...document.querySelectorAll(".site-header nav a")].map((a) => [a.getAttribute("href").slice(1), a])
+);
 
-toggle.addEventListener("click", () => {
-  const next = root.dataset.theme === "dark" ? "light" : "dark";
-  root.dataset.theme = next;
-  localStorage.setItem("theme", next);
-});
+const observer = new IntersectionObserver(
+  (entries) => {
+    for (const entry of entries) {
+      const link = links.get(entry.target.id);
+      if (link) link.style.color = entry.isIntersecting ? "var(--clay-dark)" : "";
+    }
+  },
+  { rootMargin: "-45% 0px -50% 0px" }
+);
+
+for (const id of links.keys()) {
+  const section = document.getElementById(id);
+  if (section) observer.observe(section);
+}
