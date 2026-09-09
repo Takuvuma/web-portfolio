@@ -12,6 +12,7 @@
 <header class="site-header">
   <a class="logo" href="#top">Takudzwa&nbsp;Vuma</a>
   <nav>
+    <a href="#dashboard">Progress</a>
     <a href="#about">About</a>
     <a href="#skills">Skills</a>
     <a href="#experience">Experience</a>
@@ -40,6 +41,53 @@
       <li><strong>40%</strong><span>standing privilege reduced in lab</span></li>
       <li><strong>20%</strong><span>fewer recurring identity tickets</span></li>
     </ul>
+  </section>
+
+
+  <section id="dashboard">
+    <h2>Daily progress</h2>
+    <p class="lede section-lede">
+      Becoming an IAM engineer is a daily habit, not a milestone. Every lab, policy, and
+      certification hour I put in gets logged here.
+    </p>
+
+    <div class="stat-strip">
+      <div><strong id="stat-streak">0</strong><span>day streak</span></div>
+      <div><strong id="stat-longest">0</strong><span>longest streak</span></div>
+      <div><strong id="stat-week">0h</strong><span>this week</span></div>
+      <div><strong id="stat-hours">0</strong><span>hours this year</span></div>
+      <div><strong id="stat-days">0</strong><span>active days</span></div>
+    </div>
+
+    <div class="panel heatmap-panel">
+      <div class="panel-head">
+        <h3>Activity</h3>
+        <span class="panel-note" id="heatmap-total"></span>
+      </div>
+      <div class="heatmap-scroll">
+        <svg id="heatmap" role="img" aria-label="Daily IAM study activity over the past year"></svg>
+      </div>
+      <div class="legend">
+        <span>Less</span>
+        <i class="hm-l0"></i><i class="hm-l1"></i><i class="hm-l2"></i><i class="hm-l3"></i><i class="hm-l4"></i>
+        <span>More</span>
+      </div>
+    </div>
+
+    <div class="dash-grid">
+      <div class="panel">
+        <div class="panel-head"><h3>Where the time goes</h3></div>
+        <ul class="bar-list" id="category-list"></ul>
+      </div>
+      <div class="panel">
+        <div class="panel-head"><h3>Goals</h3></div>
+        <ul class="bar-list" id="goal-list"></ul>
+      </div>
+      <div class="panel span-2">
+        <div class="panel-head"><h3>Recent sessions</h3></div>
+        <ul class="feed" id="activity-feed"></ul>
+      </div>
+    </div>
   </section>
 
   <section id="about">
@@ -211,6 +259,8 @@
 </main>
 
 <footer>© <span id="year"></span> Takudzwa Vuma</footer>
+<script src="data/activity.js"></script>
+<script src="dashboard.js"></script>
 <script src="script.js"></script>
 </body>
 </html>
