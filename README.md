@@ -42,6 +42,18 @@ Goals live in `IAM_GOALS` in the same file. Set `current` yourself, or use
 
 Commit and push after logging — the site rebuilds on GitHub Pages.
 
+## Writing a blog post
+
+```bash
+./new-post.sh "Tuning conditional access without locking myself out"
+```
+
+That creates `posts/<slug>.html` from `posts/_template.html` and registers the
+post in `data/posts.js`, which drives the Blog section on the home page. Edit
+the HTML (plain paragraphs, headings, lists, and `<pre><code>` blocks all pick
+up the site styling), tidy the summary/tags/read time in `data/posts.js`, then
+commit and push.
+
 ## Files
 
 - `index.html` — page content (hero, dashboard, about, skills, experience, projects, contact)
@@ -49,6 +61,10 @@ Commit and push after logging — the site rebuilds on GitHub Pages.
 - `dashboard.js` — heatmap, streak math, category and goal bars, activity feed
 - `data/activity.js` — **the file you edit daily**
 - `log.sh` — appends a session to the log
+- `blog.js` — renders the blog index
+- `data/posts.js` — post metadata
+- `posts/` — one HTML file per post, plus `_template.html`
+- `new-post.sh` — scaffolds a post
 - `script.js` — footer year, scroll-spy nav
 - `Takudzwa_Vuma_Resume.pdf` — linked from the hero
 

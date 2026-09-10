@@ -312,3 +312,60 @@ footer {
   font-size: .95rem; color: var(--ink-soft);
   margin: 0 0 1.6rem; max-width: 38rem; line-height: 1.5;
 }
+
+/* ================= blog ================= */
+.post-list {
+  list-style: none; margin: 0; padding: 0;
+  display: grid; gap: 1rem; grid-template-columns: repeat(auto-fit, minmax(18rem, 1fr));
+}
+.post-card { display: flex; }
+.post-link {
+  display: block; width: 100%;
+  background: var(--shell); border: 1px solid var(--line);
+  border-radius: var(--radius); padding: 1.4rem;
+  text-decoration: none; color: var(--ink);
+  transition: border-color .15s ease, transform .15s ease;
+}
+.post-link:hover { border-color: var(--clay); transform: translateY(-2px); }
+.post-meta {
+  font-size: .78rem; color: var(--ink-soft);
+  text-transform: uppercase; letter-spacing: .1em; margin: 0 0 .5rem;
+}
+.post-link h3 { margin: 0 0 .5rem; font-size: 1.05rem; }
+.post-summary { color: var(--ink-soft); font-size: .93rem; margin: 0; }
+.post-tags { display: flex; flex-wrap: wrap; gap: .4rem; margin: .9rem 0 0; }
+.post-tags span {
+  font-size: .75rem; color: var(--clay-dark);
+  background: var(--sand-deep); border-radius: 999px; padding: .2rem .7rem;
+}
+
+/* ---- individual post page ---- */
+.post-body { max-width: 44rem; }
+.post-body .post-head { margin-bottom: 2.5rem; }
+.post-body h1 { font-size: clamp(1.7rem, 4vw, 2.4rem); margin: .5rem 0 .75rem; }
+.post-body h2 {
+  font-size: 1.15rem; text-transform: none; letter-spacing: 0;
+  color: var(--ink); margin: 2.5rem 0 .75rem;
+}
+.post-body h3 { font-size: 1rem; margin: 2rem 0 .5rem; }
+.post-body p, .post-body li { color: var(--ink-soft); }
+.post-body ul, .post-body ol { padding-left: 1.2rem; }
+.post-body li { margin-bottom: .4rem; }
+.post-body li::marker { color: var(--clay); }
+.post-body pre {
+  background: var(--shell); border: 1px solid var(--line);
+  border-radius: var(--radius); padding: 1rem; overflow-x: auto;
+  font-size: .87rem; line-height: 1.55;
+}
+.post-body code {
+  background: var(--sand-deep); padding: .1rem .4rem;
+  border-radius: 4px; font-size: .88em;
+}
+.post-body pre code { background: none; padding: 0; }
+.post-body blockquote {
+  margin: 1.5rem 0; padding: .5rem 0 .5rem 1.2rem;
+  border-left: 3px solid var(--clay); color: var(--ink-soft);
+}
+.post-body img { border-radius: var(--radius); border: 1px solid var(--line); }
+.back-link { font-size: .88rem; color: var(--clay-dark); text-decoration: none; }
+.back-link:hover { text-decoration: underline; }
