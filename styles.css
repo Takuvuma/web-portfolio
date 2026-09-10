@@ -60,7 +60,31 @@ p { margin: 0 0 1rem; }
 .lede { font-size: 1.1rem; color: var(--ink-soft); max-width: 42rem; }
 
 /* ---------- hero ---------- */
-.hero { padding-top: 5.5rem; border-bottom: 1px solid var(--line); }
+.hero {
+  padding-top: 5.5rem; border-bottom: 1px solid var(--line);
+  display: grid; gap: 2.5rem; align-items: start;
+  grid-template-columns: 1fr minmax(190px, 250px);
+  grid-template-areas:
+    "eyebrow portrait"
+    "title   portrait"
+    "lede    portrait"
+    "cta     portrait"
+    "stats   stats";
+}
+.hero .eyebrow { grid-area: eyebrow; }
+.hero h1 { grid-area: title; }
+.hero .lede { grid-area: lede; }
+.hero .cta-row { grid-area: cta; }
+.hero .stat-row { grid-area: stats; }
+.portrait {
+  grid-area: portrait;
+  width: 100%; height: auto; display: block;
+  border-radius: var(--radius);
+  border: 1px solid var(--line);
+  box-shadow: 0 18px 40px -22px rgba(51, 41, 31, .5);
+  object-fit: cover; aspect-ratio: 2 / 3;
+  background: var(--sand-deep);
+}
 .eyebrow {
   text-transform: uppercase; letter-spacing: .22em; font-size: .72rem;
   color: var(--clay-dark); font-weight: 600; margin-bottom: 1rem;
@@ -170,7 +194,13 @@ footer {
   .two-col { grid-template-columns: 1fr; }
   .skill-card.featured { grid-column: span 1; }
   section { padding: 3rem 0; }
-  .hero { padding-top: 3.5rem; }
+  .hero {
+    padding-top: 3.5rem;
+    grid-template-columns: 1fr;
+    grid-template-areas: "portrait" "eyebrow" "title" "lede" "cta" "stats";
+    gap: 1.75rem;
+  }
+  .portrait { max-width: 200px; }
 }
 
 @media (prefers-reduced-motion: reduce) {
