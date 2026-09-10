@@ -54,6 +54,18 @@ the HTML (plain paragraphs, headings, lists, and `<pre><code>` blocks all pick
 up the site styling), tidy the summary/tags/read time in `data/posts.js`, then
 commit and push.
 
+## Adding notes
+
+Notes are grouped into folders shown as folder tiles on the home page.
+
+```bash
+./new-note.sh entra-id "Break-glass account must be excluded from CA policies"
+```
+
+That appends the note to `notes/entra-id.html` and bumps the folder's count in
+`data/notes.js`. Passing a slug that doesn't exist yet creates the folder page
+and registers it. Then open the HTML and write the note body.
+
 ## Files
 
 - `index.html` — page content (hero, dashboard, about, skills, experience, projects, contact)
@@ -65,6 +77,10 @@ commit and push.
 - `data/posts.js` — post metadata
 - `posts/` — one HTML file per post, plus `_template.html`
 - `new-post.sh` — scaffolds a post
+- `notes.js` — renders the folder tiles
+- `data/notes.js` — folder list and note counts
+- `notes/` — one HTML page per folder, plus `_template.html`
+- `new-note.sh` — adds a note to a folder
 - `script.js` — footer year, scroll-spy nav
 - `Takudzwa_Vuma_Resume.pdf` — linked from the hero
 

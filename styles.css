@@ -369,3 +369,48 @@ footer {
 .post-body img { border-radius: var(--radius); border: 1px solid var(--line); }
 .back-link { font-size: .88rem; color: var(--clay-dark); text-decoration: none; }
 .back-link:hover { text-decoration: underline; }
+
+/* ================= note folders ================= */
+.folder-grid {
+  list-style: none; margin: 0; padding: 0;
+  display: grid; gap: 1.1rem; align-items: stretch;
+  grid-template-columns: repeat(auto-fit, minmax(11.5rem, 1fr));
+}
+.folder {
+  display: flex; flex-direction: column; height: 100%;
+  text-decoration: none; color: var(--ink);
+  filter: drop-shadow(0 10px 18px rgba(51, 41, 31, .13));
+  transition: transform .16s ease;
+}
+.folder:hover { transform: translateY(-4px); }
+
+/* the little tab along the top-left, like a manila folder */
+.folder-tab {
+  display: block; width: 46%; height: 17px; flex: none;
+  background: linear-gradient(180deg, #e7d2ba, #e0c8ad);
+  border: 1px solid #d3b799; border-bottom: 0;
+  border-radius: 7px 12px 0 0;
+  margin-bottom: -1px;
+}
+.folder-body {
+  display: block; flex: 1; min-height: 8.5rem;
+  background: linear-gradient(165deg, var(--shell), #f6e9dc);
+  border: 1px solid var(--line);
+  border-radius: 0 var(--radius) var(--radius) var(--radius);
+  padding: .95rem 1rem 1rem;
+}
+.folder:hover .folder-body { border-color: var(--clay); }
+.folder:hover .folder-tab { border-color: var(--clay); }
+
+.folder-name { display: block; font-weight: 600; font-size: .97rem; margin-bottom: .3rem; }
+.folder-summary { display: block; font-size: .8rem; color: var(--ink-soft); line-height: 1.45; }
+.folder-count {
+  display: inline-block; margin-top: .7rem;
+  font-size: .72rem; letter-spacing: .08em; text-transform: uppercase;
+  color: var(--clay-dark); background: var(--sand-deep);
+  border-radius: 999px; padding: .18rem .6rem;
+}
+
+/* ---- topic note page ---- */
+.note-entry { border-bottom: 1px solid var(--line); padding-bottom: 1.75rem; margin-bottom: 1.75rem; }
+.note-entry:last-of-type { border-bottom: 0; }
