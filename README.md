@@ -18,15 +18,15 @@ The home page carries a GitHub-style dashboard — contribution heatmap, streaks
 time-by-category, goal bars, and a recent-sessions feed. It all renders from one
 file: `data/activity.js`.
 
-Log a session with the helper script:
+Log a session with one command — it writes the entry, commits, and pushes:
 
 ```bash
-./log.sh entra 90 "Configured a conditional access policy in the lab"
-./log.sh cert 45 "SC-300 module 3" https://learn.microsoft.com/...
+iam entra 90 "Configured a conditional access policy in the lab"
+iam cert 45 "SC-300 module 3" https://learn.microsoft.com/...
 ```
 
-Categories: `entra` `ad` `okta` `cloud` `script` `govern` `genai` `cloudsec` `cert` `read` —
-edit or add to them in `IAM_CATEGORIES` at the bottom of `data/activity.js`.
+`iam` is a shell alias for `log.sh` (in `~/.zshrc`), so it works from any
+directory. Add `--no-push` to log without publishing.
 
 Or edit the file by hand:
 
@@ -39,8 +39,6 @@ window.IAM_LOG = [
 
 Goals live in `IAM_GOALS` in the same file. Set `current` yourself, or use
 `auto: "hours"` to have a goal track logged hours automatically.
-
-Commit and push after logging — the site rebuilds on GitHub Pages.
 
 ## Writing a blog post
 
