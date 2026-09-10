@@ -66,14 +66,18 @@ p { margin: 0 0 1rem; }
   grid-template-columns: 1fr 210px;
   grid-template-areas:
     "eyebrow portrait"
+    "name    portrait"
     "title   portrait"
     "lede    portrait"
+    "focus   portrait"
     "cta     portrait"
     "stats   stats";
 }
 .hero .eyebrow { grid-area: eyebrow; }
 .hero h1 { grid-area: title; }
+.hero .name { grid-area: name; }
 .hero .lede { grid-area: lede; }
+.hero .focus { grid-area: focus; }
 .hero .cta-row { grid-area: cta; }
 .hero .stat-row { grid-area: stats; }
 .portrait {
@@ -207,7 +211,7 @@ footer {
   .hero {
     padding-top: 3.5rem;
     grid-template-columns: 1fr;
-    grid-template-areas: "portrait" "eyebrow" "title" "lede" "cta" "stats";
+    grid-template-areas: "portrait" "eyebrow" "name" "title" "lede" "focus" "cta" "stats";
     gap: 1.75rem;
   }
   .portrait { width: 150px; height: 150px; }
@@ -298,3 +302,21 @@ footer {
   .dash-grid { grid-template-columns: 1fr; }
   .dash-grid .span-2 { grid-column: span 1; }
 }
+
+/* hero name + focus areas */
+.name {
+  font-size: 1.3rem; font-weight: 600; letter-spacing: .01em;
+  color: var(--clay-dark); margin: 0 0 .5rem;
+}
+.focus {
+  list-style: none; margin: 1.75rem 0 0; padding: 0;
+  display: grid; gap: .6rem; grid-template-columns: repeat(auto-fit, minmax(13rem, 1fr));
+}
+.focus li {
+  background: var(--shell); border: 1px solid var(--line);
+  border-left: 3px solid var(--clay);
+  border-radius: 0 var(--radius) var(--radius) 0;
+  padding: .7rem .9rem;
+}
+.focus strong { display: block; font-size: .88rem; font-weight: 600; }
+.focus span { font-size: .8rem; color: var(--ink-soft); }
