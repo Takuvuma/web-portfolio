@@ -25,7 +25,7 @@ Log a session with the helper script:
 ./log.sh cert 45 "SC-300 module 3" https://learn.microsoft.com/...
 ```
 
-Categories: `entra` `ad` `okta` `cloud` `script` `govern` `cert` `read` —
+Categories: `entra` `ad` `okta` `cloud` `script` `govern` `genai` `cloudsec` `cert` `read` —
 edit or add to them in `IAM_CATEGORIES` at the bottom of `data/activity.js`.
 
 Or edit the file by hand:

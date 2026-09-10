@@ -8,7 +8,7 @@ set -euo pipefail
 
 if [ $# -lt 3 ]; then
   echo "usage: ./log.sh <category> <minutes> \"<title>\" [link]"
-  echo "categories: entra ad okta cloud script govern cert read"
+  echo "categories: entra ad okta cloud script govern genai cloudsec cert read"
   exit 1
 fi
 

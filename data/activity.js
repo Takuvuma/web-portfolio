@@ -28,7 +28,9 @@ window.IAM_CATEGORIES = {
   cloud:   { label: "Azure / AWS IAM",     color: "#b98f6f" },
   script:  { label: "Scripting & automation", color: "#7d6a54" },
   govern:  { label: "Governance & access reviews", color: "#96745c" },
-  cert:    { label: "Certification study", color: "#6f8f7a" },
+  genai:   { label: "Generative AI security", color: "#7f8fae" },
+  cloudsec:{ label: "Cloud security",        color: "#6f8f7a" },
+  cert:    { label: "Certification study",   color: "#8a8f6f" },
   read:    { label: "Reading & research",  color: "#9a9280" },
 };
 
